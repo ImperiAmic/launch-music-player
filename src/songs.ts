@@ -11,7 +11,8 @@ export const addSong = (song: Song, songs: Song[]): void => {
 };
 
 export const isPlaylistFull = (songs: Song[]): boolean => {
-  const isFull = songs.length >= 4;
+  const maximumPlaylistLength = 4;
+  const isFull = songs.length >= maximumPlaylistLength;
 
   return isFull;
 };
